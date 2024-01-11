@@ -1,0 +1,71 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-Z1cjSxH8.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-NutJRhnE.css"
+    ],
+    "dynamicImports": [
+      "resources/js/layouts/FrontendLayout.vue",
+      "resources/js/components/Home.vue",
+      "resources/js/components/About.vue",
+      "resources/js/layouts/AdminDashboardLayout.vue",
+      "resources/js/components/AdminHome.vue",
+      "resources/js/components/AdminUser.vue"
+    ],
+    "file": "assets/app-CWIWttUW.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/components/About.vue": {
+    "file": "assets/About-e-TBsEF3.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/About.vue"
+  },
+  "resources/js/components/AdminHome.vue": {
+    "file": "assets/AdminHome-rWgcbP05.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/AdminHome.vue"
+  },
+  "resources/js/components/AdminUser.vue": {
+    "file": "assets/AdminUser-VbmYU2J2.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/AdminUser.vue"
+  },
+  "resources/js/components/Home.vue": {
+    "file": "assets/Home-Kn1bDLTL.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/components/Home.vue"
+  },
+  "resources/js/layouts/AdminDashboardLayout.vue": {
+    "file": "assets/AdminDashboardLayout-PgEwXSYB.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/layouts/AdminDashboardLayout.vue"
+  },
+  "resources/js/layouts/FrontendLayout.vue": {
+    "file": "assets/FrontendLayout-7zcJK-nw.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/layouts/FrontendLayout.vue"
+  }
+}
