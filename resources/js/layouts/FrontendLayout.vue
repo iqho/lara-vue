@@ -17,6 +17,15 @@
                 <router-link to="/admin/users" class="ml-6 text-gray-900"
                     >Users</router-link
                 >
+                <router-link to="/login" class="ml-6 text-gray-900"
+                    >Login</router-link
+                >
+                <router-link to="/register" class="ml-6 text-gray-900"
+                    >Register</router-link
+                >
+                <router-link to="/counter" class="ml-6 text-gray-900"
+                    >Counter</router-link
+                >
             </div>
         </nav>
         <router-view />

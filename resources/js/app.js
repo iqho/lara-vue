@@ -3,6 +3,7 @@ import './bootstrap';
 import { createApp } from 'vue';
 import { createRouter, createWebHistory } from 'vue-router';
 import App from './App.vue';
+import { createPinia } from 'pinia'
 
 const app = createApp(App);
 
@@ -27,6 +28,21 @@ const router = createRouter({
                     name: 'about',
                     component: () => import('./components/About.vue'),
                 },
+                {
+                    path: '/login',
+                    name: 'login',
+                    component: () => import('./pages/Login.vue'),
+                },
+                {
+                    path: '/register',
+                    name: 'register',
+                    component: () => import('./pages/Register.vue'),
+                },
+                {
+                    path: '/counter',
+                    name: 'counter',
+                    component: () => import('./pages/Counter.vue'),
+                }
             ],
         },
 
@@ -61,4 +77,5 @@ router.beforeEach((to, from, next) => {
 });
 
 app.use(router);
+app.use(createPinia())
 app.mount('#app');

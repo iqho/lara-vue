@@ -1,6 +1,6 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-Z1cjSxH8.css",
+    "file": "assets/app-zDr5r_Gt.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
@@ -12,16 +12,19 @@
       "resources/js/layouts/FrontendLayout.vue",
       "resources/js/components/Home.vue",
       "resources/js/components/About.vue",
+      "resources/js/pages/Login.vue",
+      "resources/js/pages/Register.vue",
+      "resources/js/pages/Counter.vue",
       "resources/js/layouts/AdminDashboardLayout.vue",
       "resources/js/components/AdminHome.vue",
       "resources/js/components/AdminUser.vue"
     ],
-    "file": "assets/app-CWIWttUW.js",
+    "file": "assets/app-D1rvhtJL.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/components/About.vue": {
-    "file": "assets/About-e-TBsEF3.js",
+    "file": "assets/About-1LHhpqNI.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -29,7 +32,7 @@
     "src": "resources/js/components/About.vue"
   },
   "resources/js/components/AdminHome.vue": {
-    "file": "assets/AdminHome-rWgcbP05.js",
+    "file": "assets/AdminHome-dIN8f83f.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -37,7 +40,7 @@
     "src": "resources/js/components/AdminHome.vue"
   },
   "resources/js/components/AdminUser.vue": {
-    "file": "assets/AdminUser-VbmYU2J2.js",
+    "file": "assets/AdminUser-QVc91Nt1.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -45,7 +48,7 @@
     "src": "resources/js/components/AdminUser.vue"
   },
   "resources/js/components/Home.vue": {
-    "file": "assets/Home-Kn1bDLTL.js",
+    "file": "assets/Home-RQSiXWTJ.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -53,7 +56,7 @@
     "src": "resources/js/components/Home.vue"
   },
   "resources/js/layouts/AdminDashboardLayout.vue": {
-    "file": "assets/AdminDashboardLayout-PgEwXSYB.js",
+    "file": "assets/AdminDashboardLayout-pvNkiJAl.js",
     "imports": [
       "resources/js/app.js"
     ],
@@ -61,11 +64,35 @@
     "src": "resources/js/layouts/AdminDashboardLayout.vue"
   },
   "resources/js/layouts/FrontendLayout.vue": {
-    "file": "assets/FrontendLayout-7zcJK-nw.js",
+    "file": "assets/FrontendLayout-Vw-8XjRG.js",
     "imports": [
       "resources/js/app.js"
     ],
     "isDynamicEntry": true,
     "src": "resources/js/layouts/FrontendLayout.vue"
+  },
+  "resources/js/pages/Counter.vue": {
+    "file": "assets/Counter-01Z6Vd0P.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/Counter.vue"
+  },
+  "resources/js/pages/Login.vue": {
+    "file": "assets/Login-Xq0NXPil.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/Login.vue"
+  },
+  "resources/js/pages/Register.vue": {
+    "file": "assets/Register-_JNieHCN.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/pages/Register.vue"
   }
 }
