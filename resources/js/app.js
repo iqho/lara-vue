@@ -31,17 +31,17 @@ const router = createRouter({
                 {
                     path: '/login',
                     name: 'login',
-                    component: () => import('./pages/Login.vue'),
+                    component: () => import('./views/Login.vue'),
                 },
                 {
                     path: '/register',
                     name: 'register',
-                    component: () => import('./pages/Register.vue'),
+                    component: () => import('./views/Register.vue'),
                 },
                 {
                     path: '/counter',
                     name: 'counter',
-                    component: () => import('./pages/Counter.vue'),
+                    component: () => import('./views/Counter.vue'),
                 }
             ],
         },
@@ -59,12 +59,27 @@ const router = createRouter({
                 {
                     path: '',
                     name: 'admin.home',
-                    component: () => import('./components/AdminHome.vue'),
+                    component: () => import('./views/admin/Dashboard.vue'),
                 },
                 {
                     path: 'users',
-                    name: 'admin.users',
-                    component: () => import('./components/AdminUser.vue'),
+                    name: 'admin.users.index',
+                    component: () => import('./views/admin/users/Index.vue'),
+                },
+                {
+                    path: 'users/:id',
+                    name: 'admin.users.show',
+                    component: () => import('./views/admin/users/Show.vue'),
+                },
+                {
+                    path: 'users/:id/edit',
+                    name: 'admin.users.edit',
+                    component: () => import('./views/admin/users/Edit.vue'),
+                },
+                {
+                    path: 'users/create',
+                    name: 'admin.users.create',
+                    component: () => import('./views/admin/users/Create.vue'),
                 },
             ],
         },

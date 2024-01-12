@@ -1,5 +1,5 @@
 <template>
     <div>
-        <h1>Admin Home</h1>
+        <h1>Admin Dashboard</h1>
     </div>
 </template>

@@ -1,0 +1,70 @@
+[
+  {
+    "_id": "3b98f37e-49fa-4e72-9c3d-a030534c2b85",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:8000/api/users",
+    "url": "http://127.0.0.1:8000/api/users/1",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2024-01-12T04:25:21.802Z",
+    "modified": "2024-01-12T05:11:07.884Z",
+    "headers": [],
+    "params": [],
+    "tests": []
+  },
+  {
+    "_id": "3e02120d-92eb-4a63-b638-033539aba71e",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:8000/api/users",
+    "url": "http://127.0.0.1:8000/api/users",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2024-01-12T04:26:56.622Z",
+    "modified": "2024-01-12T04:26:56.622Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  'name': 'Iqbal',\n  'email': 'hosiqb@gmail.com',\n  'password': '12345678'\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "064e27b3-8e7e-4840-89fd-5116708135ec",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://127.0.0.1:8000/api/users?name=Iqbal Hossen&email=hosiqb@gmail.com&password=12345678",
+    "url": "http://127.0.0.1:8000/api/users/1?name=Iqbal Hossen&email=hosiqb@gmail.com&password=12345678",
+    "method": "PUT",
+    "sortNum": 0,
+    "created": "2024-01-12T04:29:39.868Z",
+    "modified": "2024-01-12T05:35:36.495Z",
+    "headers": [],
+    "params": [
+      {
+        "name": "name",
+        "value": "Iqbal Hossen",
+        "isPath": false
+      },
+      {
+        "name": "email",
+        "value": "hosiqb@gmail.com",
+        "isPath": false
+      },
+      {
+        "name": "password",
+        "value": "12345678",
+        "isPath": false
+      }
+    ],
+    "body": {
+      "type": "json",
+      "raw": " {\n    \"name\": \"Iqbal Hossen2\",\n    \"email\": \"hosiqb3@gmail.com\",\n    \"password\":\"12345678\"\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]
