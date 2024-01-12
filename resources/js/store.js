@@ -13,12 +13,12 @@ export const useStore = defineStore('store', {
             this.count--
         },
         async getUsers() {
-            const response = await fetch('http://127.0.0.1:8000/api/users')
-            const data = await response.json()
+            const response = await window.axios.get('/users')
+            const data = response.data
             this.users = data.data
         },
         async getUser(id) {
-            const response = await fetch(`http://127.0.0.1:8000/api/users/${id}`)
+            const response = await window.axios.get(`/users/${id}`)
             const data = await response.json()
             return data.user
         },
