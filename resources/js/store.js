@@ -17,10 +17,11 @@ export const useStore = defineStore('store', {
             const data = response.data
             this.users = data.data
         },
+
         async getUser(id) {
             const response = await window.axios.get(`/users/${id}`)
-            const data = await response.json()
-            return data.user
+            const data = response.data
+            return data.data
         },
 
         // create new user

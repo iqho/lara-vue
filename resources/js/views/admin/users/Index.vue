@@ -63,6 +63,16 @@
                     <td class="border px-4 py-2">
                         <router-link
                             :to="{
+                                name: 'admin.users.show',
+                                params: { id: user.id },
+                            }"
+                            class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded me-1"
+                        >
+                            View
+                        </router-link>
+
+                        <router-link
+                            :to="{
                                 name: 'admin.users.edit',
                                 params: { id: user.id },
                             }"
