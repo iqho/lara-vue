@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-import axios from 'axios'
 
 export const useStore = defineStore('store', {
     state: () => ({
@@ -16,7 +15,7 @@ export const useStore = defineStore('store', {
         async getUsers() {
             const response = await fetch('http://127.0.0.1:8000/api/users')
             const data = await response.json()
-            this.users = data.users
+            this.users = data.data
         },
         async getUser(id) {
             const response = await fetch(`http://127.0.0.1:8000/api/users/${id}`)
@@ -28,7 +27,7 @@ export const useStore = defineStore('store', {
         async createUser(user) {
 
             try{
-                const response = await axios.post('http://127.0.0.1:8000/api/users', user)
+                const response = await window.axios.post('/users', user)
                 return response.data
             }catch (e) {
                 return e.response.data
@@ -38,7 +37,7 @@ export const useStore = defineStore('store', {
         async updateUser(id, user) {
 
             try{
-                const response = await axios.put(`http://127.0.0.1:8000/api/users/${id}`, user)
+                const response = await window.axios.put(`/users/${id}`, user)
                 return response.data
             }catch (e) {
                 return e.response.data
@@ -48,7 +47,7 @@ export const useStore = defineStore('store', {
         // delete user
         async deleteUser(id) {
             try{
-                const response = await axios.delete(`http://127.0.0.1:8000/api/users/${id}`)
+                const response = await window.axios.delete(`/users/${id}`)
                 return response.data
             }catch (e) {
                 return e.response.data

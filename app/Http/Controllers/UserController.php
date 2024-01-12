@@ -10,9 +10,12 @@ class UserController extends Controller
 {
     public function index()
     {
+        $users = User::latest()->get();
         return response()->json([
-            'users' => User::all()
-        ]);
+            'success' => true,
+            'message' => 'User List Retrieved Successfully',
+            'data' => $users
+        ], 200);
     }
 
     public function store(Request $request)
@@ -60,14 +63,15 @@ class UserController extends Controller
     public function show(User $user)
     {
         return response()->json([
-            'user' => $user
-        ]);
+            'success' => true,
+            'message' => 'User Retrieved Successfully',
+            'data' => $user
+        ], 200);
     }
 
     public function update(Request $request, User $user)
     {
         try {
-            // validate request
             $request->validate([
                 'name' => 'required',
                 'email' => 'required|email|unique:users,email,'.$user->id,
@@ -86,7 +90,7 @@ class UserController extends Controller
             return response()->json([
                 'status' => 'success',
                 'user' => $user,
-                'message' => 'User updated successfully'
+                'message' => 'User Updated Successfully'
             ]);
 
         } catch (\Illuminate\Validation\ValidationException $e) {

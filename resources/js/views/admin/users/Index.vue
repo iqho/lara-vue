@@ -1,5 +1,34 @@
 <template>
     <div>
+        <div v-if="success">
+            <div
+                class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative"
+                role="alert"
+            >
+                <span class="block sm:inline">User Deleted Successfully.</span>
+                <span class="absolute top-0 bottom-0 right-0 px-4 py-3">
+                    <svg
+                        @click="success = false"
+                        class="fill-current h-6 w-6 text-green-500"
+                        role="button"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                    >
+                        <title>Close</title>
+                        <path
+                            d="M14.348 14.849a1 1 0 01-1.414 0L10
+                            11.414l-2.93 2.93a1 1 0 01-1.414
+                            0l-.707-.707a1 1 0 010-1.414l2.93-2.93-2.93-2.93a1
+                            1 0 010-1.414l.707-.707a1 1 0 011.414
+                            0l2.93 2.93 2.93-2.93a1 1 0 011.414
+                            0l.707.707a1 1 0 010 1.414l-2.93 2.93 2.93
+                            2.93a1 1 0 010 1.414l-.707.707z"
+                        />
+                    </svg>
+                </span>
+            </div>
+        </div>
+
         <table class="table-auto">
             <thead>
                 <tr>
@@ -42,8 +71,10 @@
                             Edit
                         </router-link>
                         <button
+                            to="#"
                             @click="deleteUser(user.id)"
-                            class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+                            class="bg-red-500 hover:bg-red-700 text-white font-bold rounded"
+                            style="padding: 5px 12px"
                         >
                             Delete
                         </button>
@@ -61,12 +92,18 @@ import AboutVue from "../../../components/About.vue";
 
 const store = useStore();
 const users = ref([]);
+const success = ref(false);
 
 const deleteUser = async (id) => {
     if (confirm("Are you sure you want to delete this user?")) {
         await store.deleteUser(id);
         users.value = store.users;
         users.value = users.value.filter((user) => user.id !== id);
+        success.value = true;
+
+        setTimeout(() => {
+            success.value = false;
+        }, 5000);
     }
 };
 

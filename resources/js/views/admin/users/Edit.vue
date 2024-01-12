@@ -1,6 +1,13 @@
 <template>
     <div>
-        <h1 class="text-3xl mb-4">Update User</h1>
+        <h1 class="text-3xl mb-4 inline-flex">Update User</h1>
+
+        <router-link
+            :to="{ name: 'admin.users.index' }"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded float-right"
+        >
+            Back
+        </router-link>
 
         <div
             v-if="success"
