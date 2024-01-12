@@ -14,14 +14,17 @@
             </div>
 
             <div>
-                <button
-                    type="submit"
-                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-                >
+                <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
                     Login
                 </button>
             </div>
         </form>
+
+        <div class="mt-3">
+            <router-link to="/register">Register</router-link> |
+            <router-link to="/">Home</router-link>
+        </div>
+
     </div>
 </template>
 

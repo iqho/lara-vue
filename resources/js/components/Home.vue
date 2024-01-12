@@ -13,6 +13,3 @@
         </div>
     </div>
 </template>
-<script setup>
-document.title = "Home Page";
-</script>
