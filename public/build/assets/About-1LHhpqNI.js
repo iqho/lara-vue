@@ -1,1 +1,0 @@
-import{c as e,o as t,a as o}from"./app-D1rvhtJL.js";const s=o("h1",null,"About Us Page",-1),a=[s],u={__name:"About",setup(c){return document.title="About Us Page",(n,_)=>(t(),e("div",null,a))}};export{u as default};
